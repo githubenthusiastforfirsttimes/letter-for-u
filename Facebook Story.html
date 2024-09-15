@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 50px;
+            background-color: #f0f8ff;
+        }
+        .link-container {
+            position: relative;
+            display: inline-block;
+            margin: 20px;
+        }
+        .hidden-link {
+            text-decoration: none;
+            font-size: 18px;
+            color: #ff69b4; /* Pink color for the text */
+            visibility: hidden;
+        }
+        .pink-bar {
+            position: absolute;
+            width: 100%;
+            height: 5px;
+            background-color: #ff69b4; /* Pink bar covering the link */
+            bottom: 0;
+            left: 0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            transform-origin: bottom left;
+        }
+        .link-container:hover .pink-bar {
+            transform: scaleY(0); /* When hovered, the bar disappears */
+        }
+        .link-container:hover .hidden-link {
+            visibility: visible; /* Reveal the link when hovered */
+        }
+        /* Button-style animation for the pink bar */
+        .pink-bar.animated {
+            box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+            transform: scaleY(1.1); /* Slightly scale the bar when hovering */
+        }
+    </style>
+    
+</head>
+<body>
+    <div class="link-container">
+        <a href="Love Letter.html" class="hidden-link" target="_blank">Click Here for the Surprise!</a>
+        <div class="pink-bar animated"></div>
+    </div>
+
+    <script>
+        // If you want the pink bar to animate without hearts, the above CSS handles the scaling effect.
+    </script>
+</body>
+
+</html>
