@@ -78,16 +78,16 @@
                 for (var i = 0; i < 10; i++) {
                     var heart = document.createElement('div');
                     heart.className = 'heart';
-                    heart.style.backgroundImage = "url('https://example.com/heart.png')"; // Replace with your heart image URL
+                    heart.style.backgroundImage = "url('https://imgur.com/rzacKgq')"; // Replace with your heart image URL
                     heart.style.left = `${Math.random() * 100}px`;
-                    heart.style.top = `${Math.random() * 50}px`;
+                    heart.style.top = `${Math.random() * 100}px`;
                     heartContainer.appendChild(heart);
                 }
 
                 // Redirect after a short delay to allow the hearts to animate
                 setTimeout(function() {
                     window.location.href = "Facebook Story.html";
-                }, 500); // Adjust delay as needed
+                }, 1000); // Adjust delay as needed
             } else {
                 alert("Please enter your name!");
             }
